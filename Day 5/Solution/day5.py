@@ -5,7 +5,6 @@
 
 # ----------------------------------------------------------------------------------------------------------------
 
-import sys
 from itertools import combinations
 
 
@@ -22,9 +21,9 @@ def max_area(height):
 
 
 def main():
-    if len(sys.argv) < 2:
-        sys.exit("Usage: python day5.py list (where list is in the form e.g. 1 2 3 4)")
-    height = [int(i) for i in sys.argv[1:]]
+    print()
+    height_string = input("Input the list of heights (in the format e.g. 1,2,3,4):\n")
+    height = [int(i) for i in height_string.split(",")]
     print()
     print(f"Max area = {max_area(height)}")
     print()

@@ -43,13 +43,13 @@ def main():
     A = [
         int(i)
         for i in input(
-            "Give the list of prices (A) as a string (e.g. 1,2,3,4): "
+            "Give the list of prices (A) as a string (e.g. 1,2,3,4):\n"
         ).split(",")
     ]
     B = [
         int(i)
         for i in input(
-            "Give the list of money you get back (B) as a string (e.g. 1,2,3,4): "
+            "Give the list of money you get back (B) as a string (e.g. 1,2,3,4):\n"
         ).split(",")
     ]
     print()

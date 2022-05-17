@@ -45,7 +45,7 @@ def decrypt(encrypted):
 def main():
     print()
     encrypted_string = input(
-        "Input the encrypted message (in the format e.g. 1, 2, 3, 4): "
+        "Input the encrypted message (in the format e.g. 1, 2, 3, 4):\n"
     )
     encrypted = encrypted_string.split(", ")
     print()
