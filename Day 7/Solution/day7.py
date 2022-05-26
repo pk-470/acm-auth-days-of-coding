@@ -16,7 +16,6 @@
 # ----------------------------------------------------------------------------------------------------------------------
 
 import sys
-import copy
 
 
 def split(string):
@@ -56,7 +55,7 @@ def check(split_to_check):
 def decryptions_no(message):
     # Find the number of valid decryptions to a given encrypted message
     split_list = split(message)
-    split_list_copy = copy.deepcopy(split_list.copy)
+    split_list_copy = split_list.copy()
     for split_to_check in split_list_copy:
         if not check(split_to_check):
             split_list.remove(split_to_check)
